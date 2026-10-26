@@ -178,13 +178,20 @@ $vacio = null;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="lab9-huella" content="<?php echo $huella; ?>">
   <title>Lab 9 · Estructuras de control</title>
-  <!-- TODO CSS-1: enlaza css/estilos.css (CSS externo) -->
-  <!-- TODO CSS-2: agrega un <style> interno con al menos 2 reglas -->
+  
+  <!-- CSS Externo -->
+  <link rel="stylesheet" href="css/estilos.css">
+  
+  <!-- CSS Interno -->
+  <style>
+    body { font-family: Arial, sans-serif; }
+    main { max-width: 800px; margin: auto; }
+  </style>
 </head>
 <body>
   <header>
-    <!-- TODO CSS-3: agrega un atributo style (CSS en línea) a este h1 -->
-    <h1>Laboratorio #9 · Estructuras de control</h1>
+    <!-- CSS en línea -->
+    <h1 style="color: darkblue;">Laboratorio #9 · Estructuras de control</h1>
     <p id="autor"> Autor: <?php echo $nombreCompleto; ?></p>
   </header>
 
