@@ -116,7 +116,26 @@ $vacio = null;
     }
 // ---------- EJERCICIO 4 · Mes y estación (match) ----------
 // TODO 4
+// Ejercicio 4: Mes y estación
+    $nombreMes = match($mes) {
+        1 => "Enero",
+        2 => "Febrero",
+        3 => "Marzo",
+        4 => "Abril",
+        5 => "Mayo",
+        6 => "Junio",
+        7 => "Julio",
+        8 => "Agosto",
+        9 => "Septiembre",
+        10 => "Octubre",
+        11 => "Noviembre",
+        12 => "Diciembre",
+    };
 
+    $estacion = match($mes) {
+        12, 1, 2, 3, 4 => "Seca",
+        5, 6, 7, 8, 9, 10, 11 => "Lluviosa",
+    };
 // ---------- EJERCICIO 5 · Caja de la tienda (reto integrador) ----------
 // TODO 5
 ?>
@@ -172,7 +191,7 @@ $vacio = null;
 
     <section id="ej4">
       <h2>Ejercicio 4 · Mes y estación</h2>
-      <p id="ej4-res"><!-- TODO 4 --></p>
+      <p id="ej4-res">Mes: <?php echo $nombreMes; ?> | Estación: <?php echo $estacion; ?></p>
     </section>
 
     <section id="ej5">
